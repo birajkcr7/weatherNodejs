@@ -1,0 +1,106 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "quicksanf", sans-serif;
+}
+
+body{
+    background: rgb(203, 177, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+html,body{
+    font-size: 82.5%;
+    height: 100%;
+}
+
+
+
+
+.box {
+    width: 20vw; 
+    height: 60vh;
+    background-color: rgb(216, 197, 197);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgb(1, 1, 1);
+    position: relative;
+    min-width: 20rem;
+    min-height: 35rem;
+} 
+
+.info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+    z-index: 4;
+}
+
+.location{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.location .fa-solid {
+    margin-right:0.5rem;
+    animation: rotates 3s linear infinite alternate;
+}
+
+@keyframes rotates {
+    from{
+        transform: translateX(-0.5rem);
+    }
+    to{
+        transform: translateX(0.5rem);
+    }
+}
+
+#date{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.temp {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 3rem;
+}
+
+.tempMin_Max {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#weathercon {
+    height: 55%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 3rem;
+}
+
+#weathercon .fa-solid{
+    font-size: 6rem;
+    animation: fas-anime 3s linear infinite alternate;
+}
+
+@keyframes fas-anime{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
